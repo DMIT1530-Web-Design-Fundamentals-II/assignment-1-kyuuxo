@@ -1,0 +1,40 @@
+/*  				<section class="Ben">
+					<h2>Welcome! I'm Ben.</h2>
+					<p>Join me on my mission to travel the globe and share my experiences.</p>
+					
+					<p><a href="#">Check out my tours</a></p>
+            	</section>
+
+			------------
+			.main{
+				background-image: url("../img/Ben_And_Lake.jpg");
+				background-size: cover;
+			}
+
+			h2{
+				color: #AAD5D3;
+				font-size: 60px;
+			}
+
+			.ben a{
+				border: 1px solid #AAD5D3;
+				color: #111827;
+			}
+
+			.ben a:hover {
+				color: #AAD5D3;
+			}
+
+			.ben p{
+				font-family: 'Open Sans', sans-serif; 
+				color: #FFFFFF;
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 18px;
+				display: block;
+			} */
+
+
+            .community{
+                background-image: url("../img/building-stronger.jpg");
+            }

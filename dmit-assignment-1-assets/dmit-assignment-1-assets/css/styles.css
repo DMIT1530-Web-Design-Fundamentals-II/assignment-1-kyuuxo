@@ -44,24 +44,23 @@ p {
 	/* padding: .2rem; */
 }
 
-.long-link ul {
-	display: flex;
-	list-style: none;
+.long-link {
+	list-style: none;	
+	text-align: center;
 	/* list-style-type: none; */
 }
 
-.long-link li {
-	margin: 1px;
-	text-align: center;
-}
-
-.long-link li a {
+.long-link a {
+	font-size: 0.95rem;
+	border:1px solid #ffffff;
+	width: 24.9%;
 	text-decoration: none;
 	color: #fafafa;
 	transition: all 0.2s ease;
+	padding-top: 1.3rem;
 }
 
-.long-link li a:hover {
+.long-link a:hover {
 	background-color: #80a558;
 	/* margin: .1rem; */
 }
@@ -70,8 +69,27 @@ hr {
 	background-color: #fff;
 	width: .1rem;
 	height: 3.2rem;
-	margin: none;
 }
+
+/* .white-box a {
+	text-decoration: none;
+	padding: .7rem 3rem;
+	margin: 0.6rem;
+	background-color: #2a5ea5;
+	color: #fff;
+	transition: all 0.2s ease;
+}
+
+.white-box a:hover {
+
+	border:1px solid #2a5ea5;;
+	background-color: #e8f4f9;
+	color: #2a5ea5;
+}  */
+
+
+
+
 
 .opener {
 	text-align: center;
@@ -226,12 +244,41 @@ flex-container{
 	display: flex;
 	flex-direction: wrap;
 } 
-
-.linkbox/*linkedbox*/{
+/* 
+.linkbox{
 	margin: 1.4rem .5rem .3rem 1.3rem;
 }
 
-.linkbox .luck/* text */{
+.linkbox .luck{
+	width: 188.28px;
+	background-color: #1e426e;
+	padding: .5rem 0;
+	padding-left: 1rem;
+}
+.linkbox .luck p a {
+	text-decoration: none;
+	padding: .7rem 3rem;
+	margin: 0.6rem;
+	background-color: #2a5ea5;
+	color: #fff;
+	transition: all 0.2s ease;
+	
+			text-decoration: none;
+			font-size: 1.1rem;
+			font-weight: 400;
+			color: #fff;
+			transition: all 0.2s ease;
+}
+.linkbox .luck p a:hover {
+	background-color: #2a5ea5;
+} */
+
+
+.linkbox{
+	margin: 1.4rem .5rem .3rem 1.3rem;
+}
+
+.linkbox .luck{
 	width: 188.28px;
 	background-color: #1e426e;
 	padding: .5rem 0;
@@ -246,7 +293,26 @@ flex-container{
 }
 .linkbox .luck p a:hover {
 	background-color: #2a5ea5;
+} 
+
+/* .white-box a {
+	text-decoration: none;
+	padding: .7rem 3rem;
+	margin: 0.6rem;
+	background-color: #2a5ea5;
+	color: #fff;
+	transition: all 0.2s ease;
 }
+
+.white-box a:hover {
+
+	border:1px solid #2a5ea5;;
+	background-color: #e8f4f9;
+	color: #2a5ea5;
+}  */
+
+
+
 
 .ige /* image */{
 	width: 188.27px;
@@ -418,7 +484,89 @@ margin: 1.3rem 1rem 0.63 2rem;
 }
 
 .bo-box a:hover {
+	border:1px solid #2a5ea5;
+	background-color: #e8f4f9;
+	color: #2a5ea5;
+} 
+
+@media (max-width: 480px) {
+
+  }
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+/* 
+.community {
+	background-image: url("../img/building-stronger.jpg");
+	color: #222222;
+	background-size: cover;
+	padding: 20.8px;
+	position: relative;
+}
+
+.community h2 {
+	text-align: center;
+	font-size: 2rem;
+	padding-bottom: 1.2rem;
+}
+
+.community p {
+	font-size: 1.15rem;
+}
+
+.box {
+	background-color: rgba(255, 255, 255, 0.9);
+	width: 425.5px;
+	padding-left: 20.8px;
+	padding: 2.6rem 1.3rem 0 1.3rem;
+}
+
+.box p {
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+
+.box a {
+	text-decoration: none;
+	color: #2a5ea5;
+	transition: all 0.2s ease;
+}
+
+.box a:hover {
+	color: #80a558;
+} 
+
+.white-box a {
+	text-decoration: none;
+	padding: .7rem 3rem;
+	margin: 0.6rem;
+	background-color: #2a5ea5;
+	color: #fff;
+	transition: all 0.2s ease;
+}
+
+.white-box a:hover {
+
 	border:1px solid #2a5ea5;;
 	background-color: #e8f4f9;
 	color: #2a5ea5;
 } 
+
+*/

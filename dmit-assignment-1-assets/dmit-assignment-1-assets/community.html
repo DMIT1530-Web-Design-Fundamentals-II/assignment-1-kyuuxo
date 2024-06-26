@@ -20,22 +20,31 @@
 
 <body>
 	<header>
-		<ul>
-			<li><a href="#">OUTAGE CENTRE</a></li>
-			<li><a href="#">PAY YOUR BILL</a></li>
-			<li><a href="#">START, STOP, MOVE SERVICE</a></li>
-			<li><a href="#">CONTACT US</a></li>
-		</ul>
-		<h1>XYZ POWER</h1>
-		<ul>
-			<li><a href="index.html">HOME PAGE</a></li>
-			<li><a href="your-home.html">YOUR HOME</a></li>
-			<li><a href="community.html">COMMUNITY</a></li>
-		</ul>
+		<div class="long-link">
+			<ul>
+				<li><a href="#">OUTAGE CENTRE</a></li>
+				<hr>
+				<li><a href="#">PAY YOUR BILL</a></li>
+				<hr>
+				<li><a href="#">START, STOP, MOVE SERVICE</a></li>
+				<hr>
+				<li><a href="#">CONTACT US</a></li>
+			</ul>
+		</div>
+		<!-- TREAT THEM AS BOTTONS, CLASS -->
+
+		<section class="opener">
+			<h1>XYZ POWER</h1>
+			<div class="flex aline">
+				<li><a href="index.html">HOME PAGE</a></li>
+				<li><a href="your-home.html">YOUR HOME</a></li>
+				<li><a href="community.html">COMMUNITY</a></li>
+			</div>
+		</section>
 	</header>
 	<main>
-		<img src="img/banner-community.jpg" alt="Town">
-		<section>
+		<img src="img/banner-community.jpg" class="wide" alt="Town">
+		<section class="lay">
 			<h2>Community</h2>
 			<p>We care a lot about giving back to the areas where we live and work to help make every day.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Voluptatum voluptatum culpa nam rerum error
@@ -46,92 +55,55 @@
 				itaque tempore inventore doroum ex recusandea debities! Amet a, nisi corporis odio error quas non.
 				Similique, deleniti.</p>
 		</section>
+
 		<div class="flex-container">
 			<div class="linkedbox">
+				<div class="text">
+					<p><a href="#">Income-based programs ></a></p>
+				</div>
 				<div class="image">
 					<img src="img/community-1.jpg" alt="landry">
 				</div>
-				<div class="text">
-					<p>Income-based programs ></p>
-				</div>
 			</div>
-			<div class="linkedbox">
+			<div class="linkedbox ">
+				<div class="text">
+					<p><a href="#">Community Investments ></a></p>
+				</div>
 				<div class="image">
 					<img src="img/community-2.jpg" alt="buildings">
 				</div>
-				<div class="text">
-					<p>Community Investments ></p>
-				</div>
 			</div>
 			<div class="linkedbox">
+				<div class="text">
+					<p><a href="#">Scholarship & Bursaries ></a></p>
+				</div>
 				<div class="image">
 					<img src="img/community-3.jpg" alt="Sign up">
 				</div>
-				<div class="text">
-					<p>Scholarship & Bursaries ></p>
-				</div>
 			</div>
 		</div>
 
-		<section class="community">
-			<h2>BUILDING STRONGER COMMUNITIES TOGETHER</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accusantium repellendus accusamus obceacati
-				magni distinctio rem, a labore veritatis namquam maiores porro voluptas earum soluta est cumque
-				delectus, dolor sapiente.</p>
+		<div class="community">
+			<section class="box">
+				<h2>BUILDING STRONGER COMMUNITIES TOGETHER</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accusantium repellendus accusamus obceacati
+					magni distinctio rem, a labore veritatis namquam maiores porro voluptas earum soluta est cumque
+					delectus, dolor sapiente.</p>
 
-			<p><a href="#">Learn about our community investments</a></p>
-		</section>
-
-		<!-- 
- 				<section class="Ben">
-					<h2>Welcome! I'm Ben.</h2>
-					<p>Join me on my mission to travel the globe and share my experiences.</p>
-					
-					<p><a href="#">Check out my tours</a></p>
-            	</section>
-
-			------------
-			.main{
-				background-image: url("../img/Ben_And_Lake.jpg");
-				background-size: cover;
-			}
-
-			h2{
-				color: #AAD5D3;
-				font-size: 60px;
-			}
-
-			.ben a{
-				border: 1px solid #AAD5D3;
-				color: #111827;
-			}
-
-			.ben a:hover {
-				color: #AAD5D3;
-			}
-
-			.ben p{
-				font-family: 'Open Sans', sans-serif; 
-				color: #FFFFFF;
-				text-decoration: none;
-				font-weight: bold;
-				font-size: 18px;
-				display: block;
-			}
-		 -->
+				<p><a href="#">Learn about our community investments ></a></p>
+			</section>
+		</div>
 	</main>
 	<footer>
-		<div>
-			<p> &amp; 2021 XYZ Power</p>
+		<div class="copy">
+			<p> &copy; 2021 XYZ Power.</p>
 		</div>
-		<div>
-			<ul>
-				<li><a href="#">Media</a></li>
-				<li><a href="#">Legal</a></li>
-				<li><a href="#">Privacy Statement</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Sitemap</a></li>
-			</ul>
+		<div class="flex">
+				<p><a href="#">Media</a></p>
+				<p><a href="#">Legal</a></p>
+				<p><a href="#">Privacy Statement</a></p>
+				<p><a href="#">Careers</a></p>
+				<p><a href="#">Sitemap</a></p>
 		</div>
 	</footer>
 </body>

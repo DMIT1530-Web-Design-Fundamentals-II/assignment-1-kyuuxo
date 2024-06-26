@@ -1,40 +1,424 @@
-/*  				<section class="Ben">
-					<h2>Welcome! I'm Ben.</h2>
-					<p>Join me on my mission to travel the globe and share my experiences.</p>
-					
-					<p><a href="#">Check out my tours</a></p>
-            	</section>
+/* 
+COLOUR CODE
+#f5f5f5 off-white background
+#1e426e dark blue
 
-			------------
-			.main{
-				background-image: url("../img/Ben_And_Lake.jpg");
-				background-size: cover;
-			}
+#222222 off black
 
-			h2{
-				color: #AAD5D3;
-				font-size: 60px;
-			}
+#80a558 green hover
+#2a5ea5 tint of blue hover
 
-			.ben a{
-				border: 1px solid #AAD5D3;
-				color: #111827;
-			}
+#e8f4f9 light blue footer
+*/
 
-			.ben a:hover {
-				color: #AAD5D3;
-			}
+body {
+	font-family: 'Noto Sans', sans-serif;
+	/* margin: auto; */
+}
 
-			.ben p{
-				font-family: 'Open Sans', sans-serif; 
-				color: #FFFFFF;
-				text-decoration: none;
-				font-weight: bold;
-				font-size: 18px;
-				display: block;
-			} */
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h1 {
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+p {
+	color: #222222;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+/* ----header---- */
+.long-link {
+	background-color: #1e426e;
+	color: #fff;
+	/* padding: .2rem; */
+}
+
+.long-link ul {
+	display: flex;
+	list-style: none;
+	/* list-style-type: none; */
+}
+
+.long-link li {
+	margin: 1px;
+	text-align: center;
+}
+
+.long-link li a {
+	text-decoration: none;
+	color: #fafafa;
+	transition: all 0.2s ease;
+}
+
+.long-link li a:hover {
+	background-color: #80a558;
+	/* margin: .1rem; */
+}
+
+hr {
+	background-color: #fff;
+	width: .1rem;
+	height: 3.2rem;
+	margin: none;
+}
+
+.opener {
+	text-align: center;
+}
+
+.aline {
+	display: inline-block;
+	text-align: center;
+	padding-top: .2rem;
+	padding-bottom: 1.4rem;
+}
+
+.opener h1 {
+	color: #1e426e;
+}
+
+.opener .aline li {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	padding-right: 1rem;
+
+}
+
+.opener .aline li a {
+	text-decoration: none;
+	color: #2a5ea5;
+	transition: all 0.2s ease;
+}
+
+.opener .aline li a:hover {
+	color: #80a558;
+	text-decoration: underline;
+}
+
+.opener .aline li:nth-last-child(2) {
+	padding-right: none;
+}
+
+/* main for community */
+.wide {
+	background-size: cover;
+	position: relative;
+}
+
+.lay {
+	margin: 2.2rem 0 1.3rem 1.3rem;
+}
+
+.lay h2 {
+	text-align: center;
+	padding-bottom: 1.2rem;
+}
+
+main .lay p:nth-of-type(1) {
+	font-weight: 700;
+	padding-bottom: .6rem;
+}
+
+/* need to fix hover */
+.linkedbox {
+	margin: 2.2rem 0 1.3rem 1.3rem;
+}
+
+.linkedbox .text {
+	width: 425.5px;
+	background-color: #1e426e;
+	padding: .5rem 0;
+	padding-left: 1rem;
+}
+
+.linkedbox .text p a {
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.2s ease;
+}
+
+.linkedbox .text a:hover {
+	background: #2a5ea5;
+}
+
+.image img {
+	width: 425.5px;
+	height: 244.86px;
+}
+
+.community {
+	background-image: url("../img/building-stronger.jpg");
+	color: #222222;
+	background-size: cover;
+	padding: 20.8px;
+	position: relative;
+}
+
+.community h2 {
+	text-align: center;
+	font-size: 2rem;
+	padding-bottom: 1.2rem;
+}
+
+.community p {
+	font-size: 1.15rem;
+}
+
+.box {
+	background-color: rgba(255, 255, 255, 0.9);
+	width: 425.5px;
+	/* padding-left: 20.8px; */
+	padding: 2.6rem 1.3rem 0 1.3rem;
+}
+
+.box p {
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+
+.box a {
+	text-decoration: none;
+	color: #2a5ea5;
+	transition: all 0.2s ease;
+}
+
+.box a:hover {
+	color: #80a558;
+}
+
+/* footer */
+footer{
+	font-size: 1rem;
+	background-color: #e8f4f9;
+	padding: 20.8px;
+}
+
+footer p a {
+	padding-right: 1rem;
+	text-decoration: none;
+	color: #2a5ea5;
+	transition: all 0.2s ease;
+}
+
+footer p a:hover {
+	color: #80a558;
+}
+
+footer .copy {
+	margin-bottom: .7rem;
+}
+
+/* second page */
+
+flex-container{
+	display: flex;
+	flex-direction: wrap;
+} 
+
+.linkbox/*linkedbox*/{
+	margin: 1.4rem .5rem .3rem 1.3rem;
+}
+
+.linkbox .luck/* text */{
+	width: 188.28px;
+	background-color: #1e426e;
+	padding: .5rem 0;
+	padding-left: 1rem;
+}
+.linkbox .luck p a {
+	font-size: 1.1rem;
+	font-weight: 400;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.2s ease;
+}
+.linkbox .luck p a:hover {
+	background-color: #2a5ea5;
+}
+
+.ige /* image */{
+	width: 188.27px;
+	height: 110.03px;
+}
+
+.saying{
+	margin-top: 1.6rem;
+		margin-left: 1.3rem;
+}
+.saying h2{
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: 600;
+	margin-bottom: 1.3rem;
+}
+/* .saying img{
+
+} */
+.saying p {
+	margin-top: 1rem;
+	font-size: 1.15rem;
+	font-weight: 500;
+}
+
+.saying p a {
+	text-decoration: none;
+	color: #2a5ea5;
+	transition: all 0.2s ease;
+}
+
+.saying p a:hover {
+	color: #80a558;
+}
+
+.help{
+	background-color: #f5f5f5;
+	padding-top: 2.8rem;
+	margin-top: 1.5rem;
+	padding-bottom: 1.3rem;
+}
+.help h2{
+	text-align: center;
+	font-size: 1.9rem;
+	padding-bottom: 1.2rem;
+}
+
+.cube{
+	background: #fff;
+	border:1px solid rgb(230, 230, 230);
+	margin: 1.3rem;
+	text-align: center;
+	padding: 2rem;
+}
+.cube h3 ,.cube p{
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+.cube h3{
+	padding-bottom: .6rem;
+}
+.cube p {
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+
+.cube a {
+	text-decoration: none;
+	color: #2a5ea5;
+	transition: all 0.2s ease;
+}
+
+.cube a:hover {
+	color: #80a558;
+}
+
+/* page 3 */
+.click{
+	background-color: #e8f4f9;
+}
+.click p{
+	text-decoration: none;
+	background: #fff;
+	border:1px solid rgb(230, 230, 230);
+	width: 188.28px;
+	/* margin: 1.3rem 0.4rem 0.4rem 1.3rem; */
+	margin: 1.3rem 0.65rem 0 0.65rem;	
+	padding: .5rem;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.click p a {
+	text-decoration: none;
+	color: #2a5ea5;
+	transition: all 0.2s ease;
+}
+
+.click p a:hover {
+	background-color: #2a5ea5;
+	color: #fff;
+}
+
+.bot { /* just so i can get padding nothing else works*/
+	background-color: #e8f4f9;
+	padding-bottom: 1.3rem;
+	padding-left: 0.80rem;
+}
+
+.white-box{
+	text-align: center;
+}
+.white-box h2 {
+	font-size: 1.9rem;
+	font-weight: 600;
+	margin-top: 2.3rem;
+}
+.white-box p{
+	margin: 1rem;
+}
+
+.white-box a {
+	text-decoration: none;
+	padding: .7rem 3rem;
+	margin: 0.6rem;
+	background-color: #2a5ea5;
+	color: #fff;
+	transition: all 0.2s ease;
+}
+
+.white-box a:hover {
+	border:1px solid #2a5ea5;;
+	background-color: #e8f4f9;
+	color: #2a5ea5;
+} 
 
 
-            .community{
-                background-image: url("../img/building-stronger.jpg");
-            }
+.bo-box a {
+margin: 1.3rem 1rem 0.63 2rem;	
+}
+.gray-box{
+	text-align: center;	
+}
+.gray-box h2{
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+.gray-box h3{
+	font-size: 2rem;
+	font-weight: 700;
+	padding: 0 1.7rem;
+}
+.gray-box p{
+	font-size: 1rem;
+	padding: 0 3rem;
+}
+/* .gray-box h3:nth-last-child(2){
+	padding: 0 6rem;
+} */
+
+.bo-box a {
+	text-decoration: none;
+	margin-top: 6rem;
+	padding: .7rem 6.3rem;
+	margin-top: 0.6rem;
+	background-color: #2a5ea5;
+	color: #fff;
+	transition: all 0.2s ease;
+}
+
+.bo-box a:hover {
+	border:1px solid #2a5ea5;;
+	background-color: #e8f4f9;
+	color: #2a5ea5;
+} 

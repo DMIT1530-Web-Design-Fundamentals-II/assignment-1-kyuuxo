@@ -80,28 +80,22 @@ p {
 	color: #1e426e;
 }
 
-.opener .aline li {
+.opener .aline a {
 	list-style: none;
 	display: inline-block;
 	text-align: center;
 	padding-right: 1rem;
-
-}
-
-.opener .aline li a {
 	text-decoration: none;
 	color: #2a5ea5;
 	transition: all 0.2s ease;
 }
 
-.opener .aline li a:hover {
+.opener .aline a:hover {
 	color: #80a558;
 	text-decoration: underline;
 }
 
-.opener .aline li:nth-last-child(2) {
-	padding-right: none;
-}
+
 
 /* main for community */
 .wide {
@@ -129,7 +123,7 @@ main .lay p:nth-of-type(1) {
 }
 
 .linkedbox .text {
-	width: 425.5px;
+	/* width: 425.5px; */
 	background-color: #1e426e;
 	padding: .5rem 0;
 	padding-left: 1rem;
@@ -148,7 +142,6 @@ main .lay p:nth-of-type(1) {
 .image img {
 	width: 425.5px;
 	height: 244.86px;
-
 }
 
 .community {
@@ -439,7 +432,7 @@ footer .copy {
 
 
 .bo-box a {
-	margin: 1.3rem 1rem 0.63 2rem;
+	margin: 1.3rem 1rem 0.63rem 2rem;
 }
 
 .gray-box {
@@ -503,8 +496,8 @@ footer .copy {
 	position: relative;
 	padding: 20px;
   } */
-  
-  /* dt {
+
+/* dt {
 	align-self: flex-start;
 	width: 100%;
 	font-weight: 700;
@@ -515,8 +508,8 @@ footer .copy {
 	margin-bottom: 20px;
 	margin-left: 130px;
   } */
-  
-  .text {
+
+.change {
 	/* display: flex;
 	align-items: center; */
 	height: 40px;
@@ -525,70 +518,47 @@ footer .copy {
 	position: absolute;
 	/* left: 0; */
 	/* justify-content: flex-end; */
-  }
-  
-  .percentage {
-	font-size: .8em;
+}
+
+.percentage {
+	font-size: 0.8em;
 	line-height: 1;
 	text-transform: uppercase;
 	width: 100%;
 	height: 40px;
 	/* margin-left: 130px; */
-	background: repeating-linear-gradient(
-	to right,
-	#ddd,
-	#ddd 1px,
-	#fff 1px,
-	#fff 5%
-  );
-	
-  /* bar */
-	&:after {
-	  content: "";
-	  display: block;
-	  background-color: #80a558;;
-	  width: 2.5rem;
-	  margin-bottom: .2rem;
-	  height: 70%;
-	  position: relative;
-	  top: 50%;
-	  transform: translateY(-70%);
-	  transition: background-color .3s ease;
-	}
-	&:hover,
-	&:focus {
-	  &:after {
-		 background-color: #2a5ea5; 
-	  }
-	}
+	background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
   }
-/*   
-  @for $i from 1 through 100 {
-	.percentage-#{$i} {
-	  &:after {
-		$value: ($i * 1%);
-		width: $value;
-	  }
-	}
-  } */
   
+  .percentage:after {
+	content: "";
+	display: block;
+	background-color: #80a558;
+	width: 2.5rem;
+	margin-bottom: 0.2rem;
+	height: 70%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-70%);
+	transition: background-color 0.3s ease;
+  }
+  
+  .percentage:hover:after,
+  .percentage:focus:after {
+	background-color: #2a5ea5;
+  }
+
 /* not my work https://codepen.io/team/css-tricks/pen/eNaEeK/b46b85162c40677686cc4080baea8d02*/
 
 
-
-
-
-
-  
-
-
 @media screen and (min-width:780px) {
+
 	/* 768px */
 	.flex-container {
 		width: 768px;
 	}
 
-	footer{
+	footer {
 		display: flex;
 		column-gap: 6.1rem;
 		padding-top: 1.6rem;
@@ -596,7 +566,7 @@ footer .copy {
 
 	.opener {
 		display: flex;
-		flex-direction: wrap;
+		flex-wrap: wrap;
 		column-gap: 11.2rem;
 		padding-top: .6rem;
 		padding-left: 1.3rem;
@@ -642,10 +612,34 @@ footer .copy {
 	}
 
 	/* page 2 */
+	.image {
+		width: 234.5px;
+	}
 
 	.image img {
-		width: 141.83px;
-		height: 86.3px;
+		max-width: 234.5px;
+		max-height: 130.86px;
+	}
+
+	div.text {
+		width: 234.5px;
+	}
+
+	/* 	width: 425.5px;
+	height: 244.86px; */
+
+	.linkedbox .text {
+		margin: 0;
+		padding: 0;
+		padding: .5rem 1.1rem;
+	}
+
+	.linkedbox .text p {
+		width: 13.3rem;
+	}
+
+	.linkedbox .text img {
+		width: 300px;
 	}
 
 	.row {
@@ -668,7 +662,6 @@ footer .copy {
 		padding-left: 1.3rem;
 		padding-bottom: 1.9rem;
 		column-gap: 2.6rem;
-		
 	}
 
 	.white-box {
@@ -684,100 +677,88 @@ footer .copy {
 		border: 1px solid #2a5ea5;
 	}
 
-.white-box a {
-	margin: 0; padding: 0;
-	margin: 0.3; 
-	padding: .5rem .9rem 0rem .9rem;
-}
-.gray-box{
-	padding-bottom: 1.3rem;
-}
-.bo-box a {
-	align-items: center;
-	margin: 0; padding: 0;
-	margin-left: 6.4rem; 
-	padding: .5rem;
-}
+	.white-box a {
+		margin: 0;
+		padding: 0;
+		margin: 0.3rem;
+		padding: .5rem .9rem 0rem .9rem;
+	}
 
+	.gray-box {
+		padding-bottom: 1.3rem;
+	}
 
+	.bo-box a {
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		margin-left: 6.4rem;
+		padding: .5rem;
+	}
 
+	.community {
+		height: 456.841px;
+	}
 
+	.box {
+		float: right;
+	}
 
-
-
-
-
-
-
-
-}
-
-@media screen and (max-width: 1024px) {}
-
-@media screen and (max-width: 1200px) {}
-
-
-
-
-
-
-
-
-/* 
-.community {
-	background-image: url("../img/building-stronger.jpg");
-	color: #222222;
-	background-size: cover;
-	padding: 20.8px;
-	position: relative;
 }
 
-.community h2 {
-	text-align: center;
-	font-size: 2rem;
-	padding-bottom: 1.2rem;
+@media screen and (max-width: 1300px) {
+	body {
+		max-width: 1024px;
+		margin: auto;
+	}
+
+	.long-link a {
+		max-width: 240px;
+		margin: 0;
+		padding: 0;
+		padding: .6rem 0rem;
+		font-size: 1rem;
+	}
+
+	.long-link a {
+		font-size: .8rem;
+	}
+
+	.long-link {
+		justify-content: right;
+	}
+
+	.flex-container {
+		width: 1024px;
+	}
+
+	footer {
+		display: flex;
+		column-gap: 6.1rem;
+		padding-top: 1.6rem;
+	}
+
+	.opener {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 11.2rem;
+		padding-top: .6rem;
+		padding-left: 1.3rem;
+	}
+
+	.aline {
+		padding-top: .69rem;
+		text-align: right;
+	}
+
+	.click a {
+		margin: 0;
+		padding: 0;
+		width: 0;
+		width: 180px;
+		font-size: 1rem;
+		margin: 1.2rem 1.3rem 0 0;
+		padding: 1rem .3rem;
+	}
+
 }
-
-.community p {
-	font-size: 1.15rem;
-}
-
-.box {
-	background-color: rgba(255, 255, 255, 0.9);
-	width: 425.5px;
-	padding-left: 20.8px;
-	padding: 2.6rem 1.3rem 0 1.3rem;
-}
-
-.box p {
-	font-weight: 400;
-	padding-bottom: 10px;
-}
-
-.box a {
-	text-decoration: none;
-	color: #2a5ea5;
-	transition: all 0.2s ease;
-}
-
-.box a:hover {
-	color: #80a558;
-} 
-
-.white-box a {
-	text-decoration: none;
-	padding: .7rem 3rem;
-	margin: 0.6rem;
-	background-color: #2a5ea5;
-	color: #fff;
-	transition: all 0.2s ease;
-}
-
-.white-box a:hover {
-
-	border:1px solid #2a5ea5;
-	background-color: #e8f4f9;
-	color: #2a5ea5;
-} 
-
-*/

@@ -433,7 +433,6 @@ footer .copy {
 
 .white-box a:hover {
 	border: 1px solid #2a5ea5;
-	;
 	background-color: #e8f4f9;
 	color: #2a5ea5;
 }
@@ -456,6 +455,7 @@ footer .copy {
 	font-size: 2rem;
 	font-weight: 700;
 	padding: 0 1.7rem;
+	margin-bottom: .7rem;
 }
 
 .gray-box p {
@@ -488,10 +488,110 @@ footer .copy {
 	flex-wrap: wrap;
 }
 
+
+
+
+
+
+/* not my work https://codepen.io/team/css-tricks/pen/eNaEeK/b46b85162c40677686cc4080baea8d02*/
+/* dl {
+	display: flex;
+	background-color: white;
+	flex-direction: column;
+	width: 100%;
+	max-width: 700px;
+	position: relative;
+	padding: 20px;
+  } */
+  
+  /* dt {
+	align-self: flex-start;
+	width: 100%;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 700;
+	margin-bottom: 20px;
+	margin-left: 130px;
+  } */
+  
+  .text {
+	/* display: flex;
+	align-items: center; */
+	height: 40px;
+	width: 130px;
+	background-color: white;
+	position: absolute;
+	/* left: 0; */
+	/* justify-content: flex-end; */
+  }
+  
+  .percentage {
+	font-size: .8em;
+	line-height: 1;
+	text-transform: uppercase;
+	width: 100%;
+	height: 40px;
+	/* margin-left: 130px; */
+	background: repeating-linear-gradient(
+	to right,
+	#ddd,
+	#ddd 1px,
+	#fff 1px,
+	#fff 5%
+  );
+	
+  /* bar */
+	&:after {
+	  content: "";
+	  display: block;
+	  background-color: #80a558;;
+	  width: 2.5rem;
+	  margin-bottom: .2rem;
+	  height: 70%;
+	  position: relative;
+	  top: 50%;
+	  transform: translateY(-70%);
+	  transition: background-color .3s ease;
+	}
+	&:hover,
+	&:focus {
+	  &:after {
+		 background-color: #2a5ea5; 
+	  }
+	}
+  }
+/*   
+  @for $i from 1 through 100 {
+	.percentage-#{$i} {
+	  &:after {
+		$value: ($i * 1%);
+		width: $value;
+	  }
+	}
+  } */
+  
+/* not my work https://codepen.io/team/css-tricks/pen/eNaEeK/b46b85162c40677686cc4080baea8d02*/
+
+
+
+
+
+
+  
+
+
 @media screen and (min-width:780px) {
 	/* 768px */
 	.flex-container {
 		width: 768px;
+	}
+
+	footer{
+		display: flex;
+		column-gap: 6.1rem;
+		padding-top: 1.6rem;
 	}
 
 	.opener {
@@ -583,6 +683,32 @@ footer .copy {
 		background-color: #f5f5f5;
 		border: 1px solid #2a5ea5;
 	}
+
+.white-box a {
+	margin: 0; padding: 0;
+	margin: 0.3; 
+	padding: .5rem .9rem 0rem .9rem;
+}
+.gray-box{
+	padding-bottom: 1.3rem;
+}
+.bo-box a {
+	align-items: center;
+	margin: 0; padding: 0;
+	margin-left: 6.4rem; 
+	padding: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
